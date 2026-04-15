@@ -3,11 +3,11 @@
 This project cleans raw text data using Python.
 
 ## Files
-- main.py
-- data.txt
+- [main.py](main.py)
+- [data.txt](data.txt)
 
 ## How to run
-python main.py
+- [python main.py](main.py)
 
 ## What I learned
 - Reading files.
