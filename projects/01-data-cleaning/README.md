@@ -6,9 +6,6 @@ This project cleans raw text data using Python.
 - [main.py](main.py)
 - [data.txt](data.txt)
 
-## How to run
-- [python main.py](main.py)
-
 ## What I learned
 - Reading files.
 - Cleaning text.
