@@ -1,0 +1,55 @@
+# 📊 Sales & Customer Revenue Analytics (SQL Project)
+
+## 🧠 Project Overview
+This project simulates a retail business dataset to analyse sales performance, customer behaviour, and product trends. The goal is to demonstrate strong SQL skills including joins, CTEs, aggregations, and customer segmentation logic to extract actionable business insights.
+
+---
+
+## 🎯 Business Objectives
+- Identify top-performing products by revenue
+- Analyse customer purchasing behaviour
+- Calculate monthly revenue trends
+- Segment customers based on spending patterns
+
+---
+
+## 🛠️ Tech Stack
+- SQL (PostgreSQL)
+- Data Modelling (Relational Schema Design)
+- Excel (basic validation)
+
+---
+
+## 📂 Dataset Structure
+The dataset is structured into relational tables:
+- customers
+- orders
+- order_items
+- products
+
+---
+
+## 🔍 Key SQL Techniques Used
+- JOINs across multiple tables
+- Common Table Expressions (CTEs)
+- Aggregations (SUM, AVG, COUNT)
+- Window Functions (RANK, ROW_NUMBER)
+- CASE WHEN for segmentation
+
+---
+
+## 📊 Key Insights
+- Identified top 10% customers contributing majority of revenue
+- Determined best-performing product categories
+- Found monthly revenue fluctuations and seasonal trends
+- Segmented customers into High / Medium / Low value groups
+
+---
+
+## 📌 Example SQL Query
+```sql
+SELECT customer_id,
+       SUM(total_amount) AS lifetime_value
+FROM orders
+GROUP BY customer_id
+ORDER BY lifetime_value DESC;
